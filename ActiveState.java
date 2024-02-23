@@ -18,14 +18,14 @@ public class ActiveState implements AccountState{
     }
 
     @Override
-    public void withdraw(){
-        AccountTest accountTest = new AccountTest();
-
+    public void deposit(){
+        
     }
+
 
     @Override
-    public void deposit(){
-        System.out.println("A");
-    }
+    public void withdraw(){
+       
 
+    }
 }

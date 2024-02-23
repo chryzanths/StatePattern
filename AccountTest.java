@@ -5,8 +5,6 @@ public class AccountTest {
 
         AccountContext context = new AccountContext();
 
-
-
         //Suspend the account
         context.suspend();
 
