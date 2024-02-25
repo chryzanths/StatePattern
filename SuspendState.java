@@ -12,12 +12,6 @@ public class SuspendState implements AccountState{
     }
 
     @Override
-    public void suspend(){
-        System.out.println("Account is already suspended!");
-    }
-
-
-    @Override
     public void deposit() {
 
     }
@@ -26,5 +20,11 @@ public class SuspendState implements AccountState{
     public void withdraw() {
 
     }
+
+    @Override
+    public void suspend(){
+        System.out.println("Account is already suspended!");
+    }
+
 
 }

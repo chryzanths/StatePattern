@@ -4,6 +4,9 @@ public class AccountTest {
         Account myAccount = new Account("1234", 10000.0);
 
         AccountContext context = new AccountContext();
+        context.setState(new ActiveState());
+
+        System.out.println("Your account number: " + myAccount.accountNumber() + "\n");
 
         //Suspend the account
         context.suspend();
@@ -22,6 +25,8 @@ public class AccountTest {
         //Close the account()
         context.close();
 
+        context.setState(new ClosedState());
+
         //Activate the account
         context.activate(); // Displays "You cannot activate a closed account!"
 
@@ -30,10 +35,12 @@ public class AccountTest {
 
 
         //Withdraw to the account
-        myAccount.withdraw(500.0);// Show message "You cannot withdraw on a closed                   account!". Call the toString() to show current balance and account number.
+        myAccount.withdraw(500.0);// Show message "You cannot withdraw on a closed account!".
+        // Call the toString() to show current balance and account number.
 
         //Deposit to the account
-        myAccount.deposit(1000.0);// Show message "You cannot deposit on closed                  //account displays account!". Call the toString() to show current balance and account number.
+        myAccount.deposit(1000.0);// Show message "You cannot deposit on closed
+        // account displays account!". Call the toString() to show current balance and account number.
     }
 
 }

@@ -18,14 +18,14 @@ public class ActiveState implements AccountState{
     }
 
     @Override
-    public void deposit(){
-        
-    }
+    public void deposit() {
 
+    }
 
     @Override
-    public void withdraw(){
-       
+    public void withdraw() {
 
     }
+
+
 }

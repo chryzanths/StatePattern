@@ -17,4 +17,12 @@ public class AccountContext
     public void suspend(){
         state.suspend();
     }
+
+    public void deposit(){
+        state.deposit();
+    }
+    public void withdraw(){
+        state.withdraw();
+    }
+
 }
