@@ -35,12 +35,14 @@ public class AccountTest {
 
 
         //Withdraw to the account
-        myAccount.withdraw(500.0);// Show message "You cannot withdraw on a closed account!".
+        context.withdraw();// Show message "You cannot withdraw on a closed account!".
         // Call the toString() to show current balance and account number.
+        myAccount.withdraw(0.0);
 
         //Deposit to the account
-        myAccount.deposit(1000.0);// Show message "You cannot deposit on closed
+        context.deposit();// Show message "You cannot deposit on closed
         // account displays account!". Call the toString() to show current balance and account number.
+        myAccount.deposit(0.0);
     }
 
 }
