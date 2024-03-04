@@ -88,4 +88,7 @@ Create AccountTest() class to test the Account:
     // Call the toString() to show current balance and account number.
     }
     }
+![Blank diagram](https://github.com/chryzanths/StatePattern/assets/104879763/d3021c78-30b5-4ae2-91d3-e0328139b1e1)
+
+    
 
